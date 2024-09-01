@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOHER CLINIC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg fixed-top rounded-3" style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+            <img src="images/me.jpg" alt="me" width="50" height="50" class="rounded-circle">
+            <a class="navbar-brand ms-3 logo" href="#"><span class="text-primary">DR.</span>GOHER</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Results</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle border border-info rounded-pill" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Available Tests
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">CBC</a></li>
+                            <li><a class="dropdown-item" href="#">INR</a></li>
+                            <li><a class="dropdown-item" href="#">ABG</a></li>
+                            <li><a class="dropdown-item" href="#">ALP</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Another Tests</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <button type="button" class="btn btn-outline-success ms-2" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal" data-bs-whatever="@mdo">Login</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+<section>
+    <ul class="list list-unstyled text-center position-fixed end-0 mx-5 icons">
+        <li class="list-item"><a href=""><i class="fab fa-facebook-square"></i></a></li>
+        <li class="list-item"><a href=""><i class="fab fa-whatsapp-square"></i></a></li>
+        <li class="list-item"><a href=""><i class="fab fa-twitter-square"></i></a></li>
+        <li class="list-item"><a href=""><i class="fab fa-linkedin"></i></a></li>
+        <li class="list-item"><a href=""><i class="fab fa-instagram-square"></i></a></li>
+    </ul>
+</section>
+
+<div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                    <button type="button" class="btn-close bg-info" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <form>
+                        <div class="mb-2">
+                            <label for="recipient-name" class="col-form-label fs-3 text-info-emphasis">Email
+                                Adress:</label>
+                            <input type="text"
+                                class="form-control bg-info bg-opacity-10 border border-info border-start-0 rounded-end"
+                                id="recipient-name">
+                        </div>
+                        <div class="mb-2">
+                            <label for="Password" class="col-form-label fs-3 text-info-emphasis">Password:</label>
+                            <input type="text"
+                                class="form-control bg-info bg-opacity-10 border border-info border-start-0 rounded-end"
+                                id="Password">
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
+                                checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">remember me</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Login</button>
+                </div>
+            </div>
+        </div>
+</div>
+
+<div id="carouselExampleCaptions" class="carousel slide ">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner rounded-5">
+            <div class="carousel-item active">
+                <img src="https://img.freepik.com/free-photo/young-handsome-physician-medical-robe-with-stethoscope_1303-17818.jpg?t=st=1723116386~exp=1723119986~hmac=cb8c0745dade3e7131ae080e273949af6ee11570130e67bdf68f3181f819df45&w=1060"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-md-block text-light bg-primary-subtle rounded-5">
+                    <h2>Proper diagnosis</h2>
+                    <p>And it is done by the best and most efficient doctors.</p>
+                    <button class="btn btn-outline-light ml-2 bg-primary">Visit Us</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://img.freepik.com/free-photo/confident-doctor-standing-hospital-room-with-patients-beds_9975-22197.jpg?t=st=1723117104~exp=1723120704~hmac=6ff4f88f68da499a2662ee4384002a24e68a9fa35d89ff9410228dffab052526&w=1380"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-md-block text-light bg-primary-subtle rounded-5">
+                    <h2>Intensive Care</h2>
+                    <p>By Using the latest medical devices and equipment.</p>
+                    <button class="btn btn-outline-light ml-2 bg-primary">Visit Us</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://img.freepik.com/free-photo/happy-doctor-holding-clipboard-with-patients_1098-2176.jpg?t=st=1723116779~exp=1723120379~hmac=440088f7e0a9febe6d775bbe7dafb1f3ec476e05f6f39e1dad5069d1ac26527e&w=1060"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-md-block text-light bg-primary-subtle rounded-5">
+                    <h2>Treatment efficiency</h2>
+                    <p>Use the latest medicines and the shortest treatment plan.</p>
+                    <button class="btn btn-outline-light ml-2 bg-primary">Visit Us</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+</div>
+
+<div class="container-fluid bg-primary-subtle pb-5 rounded-5">
+        <h2 class="fs-1 ms-4 p-4 ">welcome</h2>
+        <p class="fs-3 ms-5 text-light">Welcome to my clinic. you can diagnose your disease and take the appropriate
+            treatment with the least cost and effort and
+            time.</p>
+        <button type="button" class="btn btn-outline-light ms-5 bg-primary fs-3">Primary</button>
+</div>
+<hr>
+
+<div class="container-fluid bg-primary text-center fs-1 p-5 text-light rounded-5"> popular destination in clinic
+</div>
+
+<div class="accordion " id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header rounded-5">
+                <button class="accordion-button rounded-5 fs-2 bg-primary-subtle" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                    aria-controls="collapseOne">
+                    Proper diagnosis
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show rounded-5" data-bs-parent="#accordionExample">
+                <div class="accordion-body bg-secondary-subtle rounded-5">
+                    <strong class="fs-5">In My Clinic.</strong>And it is done by the best and most efficient doctors.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header rounded-5">
+                <button class="accordion-button collapsed rounded-5 fs-2 bg-primary-subtle" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                    aria-controls="collapseTwo">
+                    Intensive Care
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body bg-secondary-subtle rounded-5">
+                    <strong class="fs-5">In My Clinic.</strong> By Using the latest medical devices and equipment.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header rounded-5">
+                <button class="accordion-button collapsed rounded-5 fs-2 bg-primary-subtle" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                    aria-controls="collapseThree">
+                    Treatment efficiency
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body bg-secondary-subtle rounded-5">
+                    <strong class="fs-5">In My Clinic.</strong> Use the latest medicines and the shortest treatment
+                    plan.
+                </div>
+            </div>
+        </div>
+</div>
+<hr>
+
+<div class="bg-primary fs-2 text-center rounded-5 rounded-bottom-0 lh-lg">Copy Your Prescription By English</div>
+<div class="bg-primary-subtle rounded-5 rounded-top-0">
+        <div class="container lh-lg py-3">
+            <p class="fs-4 d-inline">To Copy The Prescription</p><span class="text-primary fs-3">Press Here</span>
+            <button type="button" class="btn btn-primary d-block my-3" data-bs-toggle="modal"
+                data-bs-target="#exampleModal1" data-bs-whatever="@mdo">
+                Copy <span class="badge text-bg-secondary"><i class="fas fa-hand-point-up"></i></span>
+            </button>
+            <div class="form-floating">
+                <textarea class="form-control text-black" placeholder="Your Prescription" id="floatingTextarea2"
+                    style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Your Prescription</label>
+            </div>
+        </div>
+</div>
+<hr>
+<div class="bg-primary fs-2 text-center rounded-5 rounded-bottom-0 lh-lg">Copy Your Prescription By French</div>
+<div class="bg-primary-subtle rounded-5 rounded-top-0">
+        <div class="container lh-lg py-3">
+            <p class="fs-4 d-inline">Pour copier l’ordonnance</p><span class="text-primary fs-3">Appuyez ici</span>
+            <button type="button" class="btn btn-primary d-block my-3" data-bs-toggle="modal"
+                data-bs-target="#exampleModal1" data-bs-whatever="@mdo">
+                Copier <span class="badge text-bg-secondary"><i class="fas fa-hand-point-up"></i></span>
+            </button>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                    style="height: 100px"></textarea>
+                <label for="floatingTextarea2">l’ordonnance</label>
+            </div>
+        </div>
+</div>
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Copied</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" dir="rtl">
+                    تم نسخ النص.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ok</button>
+                </div>
+            </div>
+        </div>
+</div>
+<hr>
+ 
+                                                   <div class="mid rounded-3 "></div>
+<div class="container-fluid bg-primary text-center fs-1 p-3 text-light rounded-3"> popular destination in clinic
+</div>
+
+    <section class="container">
+        <div class=" cards pt-5 row d-flex justify-content-around">
+            <div class="card card1 col-xl-3 col-md-5 col-12 shadow p-2 mb-5 bg-body-tertiary rounded mx-2" >
+                <img src="https://img.freepik.com/free-photo/clinic-registration-counter-waiting-room-lobby-computer-make-checkup-appointments-with-healthcare-report-papers-empty-hospital-reception-desk-with-medical-forms-insurance-support_482257-50666.jpg?t=st=1724256821~exp=1724260421~hmac=4d09e7182aec9b74b58aed1b47cd8ead3f89797a419400d45dbeb57af5f6093f&w=1060"
+                    class="card-img-top" alt="..." style="height: 250px;">
+                <div class="card-body">
+                    <span class="card-title p-2">Easy registration</span>
+                    <button type="button" class="btn btn-primary">regist now</button>
+                    <p class="card-text">The first step in clinic.</p>
+                </div>
+            </div>
+        
+            <div class="card card1 col-xl-3 col-md-5 col-12 shadow p-2 mb-5 bg-body-tertiary rounded mx-2" >
+                <img src="https://img.freepik.com/free-psd/dentist-dental-care-social-media-banner-template_202595-583.jpg?w=740&t=st=1724257877~exp=1724258477~hmac=cb62a193156bb2ef689a0531dc488de215a1acc4e3f929820cee9f49405e6706"
+                    class="card-img-top" alt="..." style="height: 250px;">
+                <div class="card-body">
+                    <span class="card-title p-2">Efficiency</span>
+                    <button type="button" class="btn btn-primary">regist now</button>
+                    <p class="card-text">Qualified staff of doctors.</p>
+                </div>
+            </div>
+        
+            <div class="card card1 col-xl-3 col-md-5 col-12 shadow p-2 mb-5 bg-body-tertiary rounded mx-2" >
+                <img src="https://img.freepik.com/premium-photo/clinical-serenity-empty-hospital-corridor-with-room_1308163-3885.jpg?w=740"
+                    class="card-img-top" alt="..." style="height: 250px;">
+                <div class="card-body">
+                    <span class="card-title p-2">Cleanliness</span>
+                    <button type="button" class="btn btn-primary">regist now</button>
+                    <p class="card-text">By qualified cleaners.</p>
+                </div>
+            </div>
+        
+            <div class="card card1 col-xl-3 col-md-5 col-12 shadow p-2 mb-5 bg-body-tertiary rounded mx-2" >
+                <img src="https://img.freepik.com/premium-photo/doctor-with-nurse-examining-patient-ward-hospital_1048944-23499767.jpg?w=1380"
+                    class="card-img-top" alt="..." style="height: 250px;">
+                <div class="card-body">
+                    <span class="card-title p-2">follow-up</span>
+                    <button type="button" class="btn btn-primary">regist now</button>
+                    <p class="card-text">Continuous follow-up.</p>
+                </div>
+            </div>
+        
+            <div class="card card1 col-xl-3 col-md-5 col-12 shadow p-2 mb-5 bg-body-tertiary rounded mx-2" >
+                <img src="https://img.freepik.com/free-photo/interior-view-operating-room_1170-2255.jpg?t=st=1724332429~exp=1724336029~hmac=df1e324def969744386e44e5349a38b03fd48360abd1f47c7803ad29f7455072&w=360"
+                    class="card-img-top" alt="..." style="height: 250px;">
+                <div class="card-body">
+                    <span class="card-title p-2">Intensive Care</span>
+                    <button type="button" class="btn btn-primary">regist now</button>
+                    <p class="card-text">with the latest equipment.</p>
+                </div>
+            </div>
+        
+            <div class="card card1 col-xl-3 col-md-5 col-12 shadow p-2 mb-5 bg-body-tertiary rounded mx-2" >
+                <img src="https://img.freepik.com/premium-photo/ambulance-responds-call-city-night-generative-ai_446633-170520.jpg?w=1060"
+                    class="card-img-top" alt="..." style="height: 250px;">
+                <div class="card-body">
+                    <span class="card-title p-2">An ambulance</span>
+                    <button type="button" class="btn btn-primary">regist now</button>
+                    <p class="card-text">Round-the-clock 24 hr.</p>
+                </div>
+            </div>
+        
+            <div class="card card1 col-xl-3 col-md-5 col-12 shadow p-2 mb-5 bg-body-tertiary rounded mx-2" >
+                <img src="https://img.freepik.com/free-vector/emergency-isometric_1284-25291.jpg?t=st=1724332778~exp=1724336378~hmac=e72b5a699c11ea9f5cbbc2bf2ca1ee564873c11582d8bfe62c13b4aea21ee30d&w=740"
+                    class="card-img-top" alt="..." style="height: 250px;">
+                <div class="card-body">
+                    <span class="card-title p-2">service</span>
+                    <button type="button" class="btn btn-primary">regist now</button>
+                    <p class="card-text">Round-the-clock 24 hr.</p>
+                </div>
+            </div>
+        
+            <div class="card card1 col-xl-3 col-md-5 col-12 shadow p-2 mb-5 bg-body-tertiary rounded mx-2" >
+                <img src="https://img.freepik.com/free-photo/3d-rendering-hospital-building_23-2150896634.jpg?t=st=1724332607~exp=1724336207~hmac=f7245958adae42dd1968be7501b0dd40d0e393fce5744704899681d43c4430fe&w=360"
+                    class="card-img-top" alt="..." style="height: 250px;">
+                <div class="card-body">
+                    <span class="card-title p-2">Visit Us</span>
+                    <button type="button" class="btn btn-primary">regist now</button>
+                    <p class="card-text">To Better health.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+                                      <div class="mid rounded-3"></div>
+<hr>
+<div class="container-fluid bg-primary text-center fs-1 p-4 text-light rounded-3"> THANKS FOR</div>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center p-5 m-auto">
+            <div class="team text-light col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 bg-body-tertiary rounded-5 mx-3 my-3">
+                <div >
+                    <p>All Thanks and appreciation</p>
+                    <p><i class="far fa-clock"></i>Novamber 24,1999</p>
+                </div>
+                <div class="text-primary">
+                    <img src="images/me.jpg" alt="000" class=" rounded-top-circle rounded-bottom-circle border border-2 border-black"
+                        style="width: 120px; height: 150px; margin-top:150px">
+                    <p class="fs-5 ">Eng.Aballah goher"GOHER" &#128513;</p>
+                    <p>Director of UL/UX</p>
+                </div>
+            </div>
+        
+            <div class="team text-light col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 bg-body-tertiary rounded-5 mx-3 my-3 gohar">
+                <div  class="text-primary">
+                    <p>All Thanks and appreciation</p>
+                    <p><i class="far fa-clock"></i>Novamber 24,1999</p>
+                </div>
+                <div  class="text-primary">
+                    <img src="images/gohar.jpg" alt="000" class=" rounded-top-circle rounded-bottom-circle border border-2 border-black"
+                        style="width: 120px; height: 150px; margin-top:150px">
+                    <p class="fs-5 ">Eng.gohar"GOHAR" &#128513;</p>
+                    <p>Director of UL/UX</p>
+                </div>
+            </div>
+        
+            <div class="team text-light col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 bg-body-tertiary rounded-5 mx-3 my-3">
+                <div  >
+                    <p>All Thanks and appreciation</p>
+                    <p><i class="far fa-clock"></i>Novamber 24,1999</p>
+                </div>
+                <div class="text-primary">
+                    <img src="images/me.jpg" alt="000" class=" rounded-top-circle rounded-bottom-circle border border-2 border-black"
+                        style="width: 120px; height: 150px; margin-top:150px">
+                    <p class="fs-5">Eng.Aballah goher"GOHER" &#128513;</p>
+                    <p>Director of UL/UX</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <h2 class="text-primary text-center fw-bold">CLINIC GOHER NEWS</h2>
+
+    <section class="container">
+        <div class="card bg-body-secondary col-12 my-5">
+            <div class="row g-0 ">
+                <div class="col-lg-8 col-md-6 col-sm-10 p-5 p-sm-0 ">
+                    <div class="card-body">
+                        <h3 class="card-title fs-1 text-primary">Reception</h3>
+                        <p><i class="fas fa-calendar-alt"></i>Mon,May 25th 2020</p>
+                        <div class="line rounded-pill bg-primary"></div>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This content is a little bit longer This is a wider card with supporting text below as
+                            a natural lead-in to additional
+                            content. This content is a little bit longer.</p>
+                        <div class="mt-5 col-12 col-lg-12">
+                            <button type="button" class="btn btn-secondary text-dark"><i class="fas fa-tag"></i>Podcast</button>
+                            <button type="button" class="btn btn-secondary text-dark"><i class="fas fa-clock"></i> 55
+                                min.</button>
+                            <button type="button" class="btn btn-secondary text-info-emphasis"><i class="fas fa-play"></i>Play
+                                Episode</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-lg-4 col-md-6 col-sm-12 px-2 imgcard">
+                    <img src="https://img.freepik.com/premium-photo/clinical-serenity-empty-hospital-corridor-with-room_1308163-3885.jpg?w=740"
+                        class="img-fluid img1 " alt="...">
+                </div>
+            </div>
+        </div>
+
+        <div class="card bg-body-secondary col-12 my-5">
+            <div class="row g-0 ">
+                <div class=" col-lg-4 col-md-6 col-sm-12 imgcard1">
+                    <img src="https://img.freepik.com/free-psd/dentist-dental-care-social-media-banner-template_202595-583.jpg?w=740&t=st=1724257877~exp=1724258477~hmac=cb62a193156bb2ef689a0531dc488de215a1acc4e3f929820cee9f49405e6706"
+                        class="img-fluid img1 " alt="...">
+                </div>
+                <div class="col-lg-8 col-md-6 col-sm-10 p-5 p-sm-0 ">
+                    <div class="card-body">
+                        <h3 class="card-title fs-1 text-primary">Doctors Staff</h3>
+                        <p><i class="fas fa-calendar-alt"></i>Mon,May 25th 2020</p>
+                        <div class="line rounded-pill bg-warning" ></div>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This content is a little bit longer This is a wider card with supporting text below as
+                            a
+                            natural lead-in to additional
+                            content. This content is a little bit longer.</p>
+                        <div class="mt-5">
+                            <button type="button" class="btn btn-secondary text-dark"><i class="fas fa-tag"></i>Podcast</button>
+                            <button type="button" class="btn btn-secondary text-dark"><i class="fas fa-clock"></i> 55
+                                min.</button>
+                            <button type="button" class="btn btn-secondary text-info-emphasis"><i class="fas fa-play"></i>Play
+                                Episode</button>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+
+        <div class="card bg-body-secondary col-12 my-5">
+            <div class="row g-0 ">
+                <div class="col-lg-8 col-md-6 col-sm-10 p-5 p-sm-0">
+                    <div class="card-body">
+                        <h3 class="card-title fs-1 text-primary">Operating Rooms</h3>
+                        <p><i class="fas fa-calendar-alt"></i>Mon,May 25th 2020</p>
+                        <div class="line rounded-pill bg-success"></div>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This content is a little bit longer This is a wider card with supporting text below as
+                            a
+                            natural lead-in to additional
+                            content. This content is a little bit longer.</p>
+                        <div class="mt-5">
+                            <button type="button" class="btn btn-secondary text-dark"><i class="fas fa-tag"></i>Podcast</button>
+                            <button type="button" class="btn btn-secondary text-dark"><i class="fas fa-clock"></i> 55
+                                min.</button>
+                            <button type="button" class="btn btn-secondary text-info-emphasis"><i class="fas fa-play"></i>Play
+                                Episode</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-lg-4 col-md-6 col-sm-12 px-2 imgcard">
+                    <img src="https://img.freepik.com/free-photo/interior-view-operating-room_1170-2255.jpg?t=st=1724332429~exp=1724336029~hmac=df1e324def969744386e44e5349a38b03fd48360abd1f47c7803ad29f7455072&w=360"
+                        class="img-fluid img1  col-12" alt="..." style="max-height: 400px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="card bg-body-secondary col-12 my-5">
+            <div class="row g-0 ">
+                <div class=" col-lg-4 col-md-6 col-sm-12 imgcard1">
+                    <img src="https://img.freepik.com/free-photo/3d-rendering-hospital-building_23-2150896634.jpg?t=st=1724332607~exp=1724336207~hmac=f7245958adae42dd1968be7501b0dd40d0e393fce5744704899681d43c4430fe&w=360"
+                        class="img-fluid img1  col-12" alt="..." style="max-height: 400px;">
+                </div>
+                <div class="col-lg-8 col-md-6 col-sm-10 p-5 p-sm-0">
+                    <div class="card-body">
+                        <h3 class="card-title fs-1 text-primary">Visit Us</h3>
+                        <p><i class="fas fa-calendar-alt"></i>Mon,May 25th 2020</p>
+                        <div class="line rounded-pill bg-info"></div>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This content is a little bit longer This is a wider card with supporting text below as
+                            a
+                            natural lead-in to additional
+                            content. This content is a little bit longer.</p>
+                        <div class="mt-5">
+                            <button type="button" class="btn btn-secondary text-dark"><i class="fas fa-tag"></i>Podcast</button>
+                            <button type="button" class="btn btn-secondary text-dark"><i class="fas fa-clock"></i> 55
+                                min.</button>
+                            <button type="button" class="btn btn-secondary text-info-emphasis"><i class="fas fa-play"></i>Play
+                                Episode</button>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    </section>
+
+    <h2 class="text-primary text-center pt-5 fs-1">Join Us</h2>
+
+    <section class="container-fluid">
+        <div class="row justify-content-around pt-5">
+            <div class="rounded-4 shadow1 bg-info-subtle col-xl-2 col-md-6 col-8 my-3 text-center">
+                <p class="text-center fs-3 text-primary">Subscribe Now</p>
+                <img src="images/twitter.jpg" alt="twiter" style="width: 150px;" class="shadow1">
+                <p class="text-center fs-5 text-primary">Go To Link</p>
+            </div>
+            <div class="rounded-4 shadow1 bg-info-subtle col-xl-2 col-md-6 col-8 my-3 text-center">
+                <p class="text-center fs-4 text-primary">Follow</p>
+                <img src="images/whats.jpg" alt="whats app" style="width: 150px;" class="shadow1">
+                <p class="text-center fs-4 text-primary">Go To Link</p>
+            </div>
+            <div class="rounded-4 shadow1 bg-info-subtle col-xl-2 col-md-6 col-8 my-3 text-center">
+                <p class="text-center fs-3 text-primary">Like The Page</p>
+                <img src="images/linked.jpg" alt="linked in" style="width: 150px;" class="shadow1">
+                <p class="text-center fs-4 text-primary">Go To Link</p>
+            </div>
+            <div class="rounded-4 shadow1 bg-info-subtle col-xl-2 col-md-6 col-8 my-3 text-center">
+                <p class="text-center fs-3 text-primary">Watch Videos</p>
+                <img src="images/insta.jpg" alt="instagram" style="width: 150px;" class="shadow1">
+                <p class="text-center fs-4 text-primary">Go To Link</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid">
+        <div class="row bg-info mt-4 ">
+            <div class="col-xl-4 col-md-6 col-12 text-center">
+                <div class="bg-secondary-subtle mt-2 rounded-pill col-11" style=" height: 3px;"></div>
+                <div class="py-3 d-flex justify-content-center">
+                    <img src="images/logo.jfif" alt="logo" class="rounded-circle" style="width: 90px; height: 90px;">
+                    <p class="text-light pt-4 px-3 fs-4">Good Clinic</p>
+                </div>
+                <div class="bg-secondary-subtle mt-2 rounded-pill col-11" style=" height: 3px;"></div>
+                <div class="text-light p-3 fs-5">
+                    <p>Tel : 000-000-000</p>
+                    <p>Address : EGYPT</p>
+                    <p>Fax : 000-000-000</p>
+                </div>
+                <div class="bg-secondary-subtle my-2" style=" height: 3px;"></div>
+            </div>
+        
+            <div class="col-xl-4 col-md-6 col-12 text-center">
+                <div class="bg-secondary-subtle mt-2 rounded-pill col-11" style=" height: 3px;"></div>
+                <div class="py-3 d-flex justify-content-center">
+                    <img src="images/logo.jfif" alt="logo" class="rounded-circle" style="width: 90px; height: 90px;">
+                    <p class="text-light pt-4 px-3 fs-4">Important Linkes</p>
+                </div>
+                <div class="bg-secondary-subtle mt-2 rounded-pill col-11" style=" height: 3px;"></div>
+                <div class="text-dark p-3 fs-5">
+                    <p class="gogo">Visit us</p>
+                    <p class="gogo">Take alook</p>
+                    <p class="gogo">Your health is more important</p>
+                </div>
+                <div class="bg-secondary-subtle my-2" style=" height: 3px;"></div>
+            </div>
+        
+            <div class="col-xl-4 col-md-6 col-12 text-center">
+                <div class="bg-secondary-subtle mt-2 rounded-pill col-11" style=" height: 3px;"></div>
+                <div class="py-3 d-flex justify-content-center">
+                    <img src="images/logo.jfif" alt="logo" class="rounded-circle" style="width: 90px; height: 90px;">
+                    <p class="text-light pt-4 px-3 fs-4">Vision</p>
+                </div>
+                <div class="bg-secondary-subtle mt-2 rounded-pill col-11" style=" height: 3px;"></div>
+                <div class="text-light p-3 fs-5">
+                    <p>Serveices for all</p>
+                    <p>Provide best serveices</p>
+                    <p>you will be better than before</p>
+                </div>
+                <div class="bg-secondary-subtle my-2" style=" height: 3px;"></div>
+            </div>
+        </div>
+    </section>
+    <div class="bg-info p-2">
+        <h2 class="text-center fs-3">COPYRIGHT &copy; 2020 ABDALLAH GOHER .GOOD CLINIC.ALL RIGHTS</h2>
+        <div class="bg-secondary-subtle my-2" style=" height: 3px;"></div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script> -->
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
